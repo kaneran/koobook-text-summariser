@@ -11,7 +11,7 @@ import time
 #the client initiates the process for closing connection via a partial handshake. After closing connection, the whole process repeats.
 def listen(word_embeddings):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_address = ('10.40.55.194', 9878)
+    server_address = ('', 9999)
     sock.bind(server_address)
     sock.listen(1)
 
